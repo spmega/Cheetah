@@ -13,7 +13,25 @@
     tools:showIn="@layout/activity_cloud_contacts_main">
 
     <TextView
+        android:id="@+id/hello_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello!" />
+
+    <TextView
+        android:id="@+id/account_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balh" />
+
+    <ListView
+        android:id="@+id/list_contact"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hello_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
