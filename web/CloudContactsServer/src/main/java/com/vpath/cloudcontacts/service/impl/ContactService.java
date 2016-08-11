@@ -1,14 +1,15 @@
 package com.vpath.cloudcontacts.service.impl;
 
-import java.util.Iterator;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.vpath.cloudcontacts.model.Contact;
 import com.vpath.cloudcontacts.model.ContactHolder;
 import com.vpath.cloudcontacts.repositories.ContactHolderRepository;
 
+@Component
 public class ContactService implements com.vpath.cloudcontacts.service.ContactService {
 
 	@Autowired

@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ContactHolderRepository extends JpaRepository<ContactHolder, Integer>{
+	public ContactHolder getByName(String name);
 }

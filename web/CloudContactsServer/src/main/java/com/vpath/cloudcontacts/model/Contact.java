@@ -48,4 +48,29 @@ public class Contact{
     public void setContactHolder(ContactHolder contactHolder) {
         this.contactHolder = contactHolder;
     }
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Contact other = (Contact) obj;
+		if (contactHolder == null) {
+			if (other.contactHolder != null)
+				return false;
+		} else if (!contactHolder.equals(other.contactHolder))
+			return false;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+    
 }
