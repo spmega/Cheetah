@@ -1,4 +1,4 @@
-package com.vpath.cloudcontacts;
+package com.vpath.cloudcontacts.web;
 
 import java.util.concurrent.atomic.AtomicLong;
 
